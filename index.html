@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="a"></p>
+    <p data-id="new2"></p>
+    <script>
+        let new1 = {
+           w1:'work',
+           w2:"in",
+           w3:'progress',
+           w4:':' 
+        }
+
+        let new2 = {
+            w1:"the",
+            w2:'opposition',
+            w3:'parties',
+            w4:'are'
+        }
+
+        let x = document.getElementById('a');
+        var b = x.innerHTML=new1.w1+' '+new1.w2+` `+new1.w3+' '+new1.w4;
+        x.style.color='red';
+
+
+        let y = document.querySelector('p[data-id="new2"]');
+        var c = y.innerHTML = new2.w1+new2.w2+new2.w3+new2.w4;
+            alert(c)
+            y.style.color="green"
+            y.style.background='red'
+    </script>
+</body>
+</html>
